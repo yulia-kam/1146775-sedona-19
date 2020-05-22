@@ -1,0 +1,41 @@
+@media (min-width: @mobile-width) {
+.map {
+    width: 320px;
+    height: 350px;
+    position: relative;
+    top: 78px;
+
+    &__iframe {
+        z-index: 2;
+        border: none;
+    }
+
+    &__img {
+        position: absolute;
+        left: 0;
+        z-index: -10;
+        overflow: hidden;
+    }
+}
+}
+
+@media (min-width: @tablet-width) {
+.map {
+    width: 768px;
+    height: 350px;
+    position: relative;
+    top: 78px;
+
+    &__iframe {
+        z-index: 2;
+        border: none;
+    }
+
+    &__img {
+        position: absolute;
+        left: 0;
+        z-index: -10;
+        overflow: hidden;
+    }
+}
+}

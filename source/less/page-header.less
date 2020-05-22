@@ -1,0 +1,113 @@
+@media (min-width: @mobile-width) {
+
+    .page-header {
+        width: 320px;
+        text-transform: uppercase;
+
+        &__menu {
+            color: white;
+            background-color: #81b3d2;
+        }
+
+
+        &__logo-and-hamburger {
+
+            position: relative;
+
+            a {
+                text-decoration: none;
+            }
+
+            a>img {
+                display: block;
+                margin: 0 auto;
+                z-index: 1000;
+            }
+        }
+
+        // &__svg-icon {
+        //     width: 23px;
+        //     height: 23px;
+        //     background-color: transparent;
+        //     border: 0px;
+        //     position: absolute;
+        //     top: 17px;
+        //     right: 20px;
+        //     cursor: pointer;
+        //     fill: #81b3d2;
+        // }
+
+        &__toggle-hamburger {
+            content: '';
+            display: block;
+            width: 23px;
+            height: 22px;
+            vertical-align: inherit;
+            -webkit-mask: url(../img/icon-menu.svg) no-repeat 50% 50%;
+            mask: url(../img/icon-menu.svg) no-repeat 50% 50%;
+            mask-size: auto;
+            mask-size: auto;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            background-color:
+                #81b3d2;
+            position: relative;
+            top: -68px;
+            right: -277px;
+            border: none;
+            cursor: pointer;
+            fill: #81b3d2;
+        }
+
+        &__sedona-logo {
+            background-image: url(../img/logo-sedona-mobile.svg);
+            background-repeat: no-repeat;
+            width: 102px;
+            height: 83px;
+            position: relative;
+            left: 35%;
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+@media (min-width: @tablet-width) {
+    .page-header {
+        // display: flex;
+        background-color: #ffffff;
+        // justify-content: space-around;
+        width: 768px;
+
+        &__toggle {
+            display: none;
+            
+        }
+
+        &__logo-and-hamburger {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+        }
+
+        &__sedona-logo {
+            background-image: url(../img/logo-sedona-tablet.svg);
+            background-repeat: no-repeat;
+            width: 102px;
+            height: 83px;
+            position: absolute;
+            left: 43%;
+            top: -58px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+
+        &__menu {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}

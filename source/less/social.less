@@ -1,0 +1,105 @@
+@media (min-width: @mobile-width) {
+.social {
+    position: relative;
+    top: 20px;
+    left: 45px;
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        width: 46px;
+        height: 48px;
+        background-color: #81b3d2;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+
+        &:hover {
+            background-color: #669ec0;
+        }
+
+        &:active {
+            background-color: #5496bd;
+        }
+    }
+
+    &__link_tw img {
+        padding-top: 17px;
+    }
+
+    &__link_fb img {
+        padding-top: 14px;
+    }
+
+    &__link_yt img {
+        padding-top: 17px;
+    }
+
+    &__icon-youtube {
+        width: 20px; 
+        height: 25px;
+        fill: #ffffff;
+        background-color: transparent;
+        position: relative;
+        top: 11px;
+        
+        &:hover {
+            fill: #ffffff;
+        }
+
+        &:active {
+            fill: #88b6d1;
+        }
+    }
+
+    .icon-facebook { 
+        width: 9px; 
+        height: 18px;
+        fill: #ffffff;
+        background-color: transparent;
+        position: relative;
+        top: 13px;
+
+        &:hover {
+            fill: #ffffff;
+        }
+
+        &:active {
+            fill: #88b6d1;
+        }
+    }
+
+    .icon-twitter { 
+        width: 18px; 
+        height: 14px;
+        fill: #ffffff;
+        background-color: transparent;
+        position: relative;
+        top: 14px;
+
+        &:hover {
+            fill: #ffffff;
+        }
+
+        &:active {
+            fill: #88b6d1;
+        }
+    }
+
+}
+}
+
+@media (min-width: @tablet-width) {
+    .social {
+        display: flex;
+
+        &__list {
+            position: relative;
+            top: -5px;
+            left: -30px;
+        }
+
+    }
+}

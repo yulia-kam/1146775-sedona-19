@@ -1,0 +1,123 @@
+@media (min-width: @mobile-width) {
+.advantage-block {
+    
+
+    &__text-block {
+        background: #81b3d2;
+        color: #ffffff;
+        text-align: center;
+        padding: 24px 20px 29px 20px;
+        //position: relative;
+        //top: -60px;
+        //z-index: -9999;
+        width: 320px;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 26px;
+        margin-top: 12px;
+    }
+
+    &__number {
+        font-size: 14px;
+        font-weight: regular;
+        line-height: 21px;
+        margin-top: -10px;
+        
+    }
+
+    &__reason {
+        font-size: 14px;
+        font-weight: regular;
+        line-height: 21px;
+    }
+    
+    // &__image {
+    //     width: 320px;
+    //     height: 260px;
+    // }
+
+    &__image {
+        padding: 0px;
+        margin: 0px;
+        background-image: url("../img/main-city-mobile@1x.jpg");
+        background-repeat: no-repeat;
+        width: 320px;
+        height: 260px;
+    }
+
+    &__image2 {
+        background-image: url("../img/main-bridge-mobile@1x.jpg");
+        background-repeat: no-repeat;
+        width: 320px;
+        height: 260px;
+        }
+}
+}
+
+@media (min-width: @tablet-width) {
+    .advantage-block {
+        display: flex;
+        // flex-direction: column;
+        height: 256px;
+        width: 768px;
+        box-sizing: border-box;
+
+        &__text-block {
+        width: 256px;
+        height: 256px;
+        box-sizing: border-box;
+        }
+
+        &__image {
+            background-image: url("../img/main-city-tablet@1x.jpg");
+            background-repeat: no-repeat;
+            width: 512px;
+            height: 256px;
+        }
+
+        &__image2 {
+        background-image: url("../img/main-bridge-tablet@1x.jpg");
+        background-repeat: no-repeat;
+        width: 512px;
+        height: 256px;
+        }
+
+        &__title {
+        padding: 0px 50px;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 26px;
+        margin-top: 20px;
+        }
+
+        &__number {
+            font-size: 14px;
+            font-weight: regular;
+            line-height: 21px;
+            margin-top: -10px;
+            
+        }
+    
+        &__reason {
+            font-size: 14px;
+            font-weight: regular;
+            line-height: 21px;
+            padding: 0px 10px;
+            margin-top: 20px;
+        }
+
+        &__image2_second-advantage {
+            order: 0;
+        }
+
+        &__text-block_second-advantage {
+            order: 1;
+        }
+
+    }
+
+}

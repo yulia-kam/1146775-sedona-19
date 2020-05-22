@@ -1,0 +1,22 @@
+@media (min-width: @mobile-width) {
+.main-nav {
+    position: relative;
+  
+    width: 320px;
+    min-height: 51px;
+    margin: 0 auto;
+  
+    background-color: #81b3d2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 768px;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      background-color: #ffffff;
+    }
+  }
+}

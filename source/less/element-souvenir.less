@@ -1,0 +1,65 @@
+@media (min-width: @mobile-width) {
+.element_souvenir > h3::before {
+    // content: '';
+    // background-image: url('../img/icon-gift.svg');
+    // background-repeat: no-repeat;
+    // background-position: 0px 0px;
+    // background-size: contain;
+    // display: inline-block;
+    // width: 32px;
+    // height: 38px;
+    // margin-right: 10px;
+    // vertical-align: inherit;
+
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 38px;
+    margin-right: 10px;
+    vertical-align: inherit;
+    -webkit-mask: url(../img/icon-gift.svg) no-repeat 50% 50%;
+    mask: url(../img/icon-gift.svg) no-repeat 50% 50%;
+    mask-size: auto;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: #81b3d2;
+
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .element_souvenir {
+        width: 256px;
+        order: 2;
+    }
+
+    .element_souvenir > h3 {
+        padding-right: 75px;
+        margin-top: -15px;
+    }
+
+    .element_souvenir > p {
+        padding: 0 40px 0;
+        margin-top: -10px;
+    }
+
+    .element_souvenir > h3::before {
+
+        content: '';
+        display: inline-block;
+        width: 65px;
+        height: 78px;
+        vertical-align: inherit;
+        -webkit-mask: url(../img/icon-gift.svg) no-repeat 50% 50%;
+        mask: url(../img/icon-gift.svg) no-repeat 50% 50%;
+        mask-size: auto;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        background-color: #81b3d2;
+        position: relative;
+        top: -80px;
+        left: 92px;
+    }
+
+
+}

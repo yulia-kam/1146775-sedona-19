@@ -1,0 +1,131 @@
+@media (min-width: @mobile-width) {
+.welcome-block {
+    position: relative;
+    top: -27px;
+    z-index: -999;
+    margin-bottom: -12px; 
+
+    &__background {
+        background-image: url('../img/main-hero.png');
+        width: 320px;
+        height: 389px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__background-photo-and-form {
+        background-image: url('../img/back-mobile-photo-form-final.jpg');
+        width: 320px;
+        height: 158px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__slogan {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        width: 320px;
+        box-sizing: border-box;
+    }
+
+    &__heading {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #000000;
+        font-weight: bold;
+        margin: 42px 30px 23px 30px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        color: #000000;
+        margin-top: 28px;
+        font-weight: normal;
+    }
+
+    &__text-photo {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #333333;
+        margin: 26px 20px 0;
+        font-weight: normal;
+    }
+
+    &__heading-photo {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #000000;
+        font-weight: bold;
+        margin: 39px 30px 23px 30px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        color: #333333;
+        font-weight: normal;
+        margin: 26px 20px 12px;
+    }
+}
+}
+
+@media (min-width: @tablet-width) {
+
+    .welcome-block {
+        // position: relative;
+        // top: -27px;
+        // z-index: -999;
+        // margin-bottom: -12px; 
+    
+        &__background {
+            background-image: url('../img/main-hero-tablet-2.png');
+            width: 768px;
+            height: 517px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &__triangle {
+            background-image: url("../img/bg-intro-triangle-tablet.svg");
+            background-repeat: no-repeat;
+            width: 768px;
+            height: 58px;
+            z-index: 1000;
+            position: relative;
+            top: -57px;
+        }
+
+        &__slogan {
+            margin: -51px 0 39px;
+            width: 768px;
+        }
+        
+        &__heading {
+            margin-left: 160px;
+            margin-right: 160px;
+            font-size: 21px;
+            line-height: 26px;
+            font-weight: bold;
+            color: #000000;
+            text-align: center;
+        }
+
+        &__description {
+            font-size: 14px;
+            line-height: 26px;
+            text-align: center;
+            color: #333333;
+            font-weight: normal;
+            margin: 26px 20px 12px;
+        }
+    }
+
+
+}
+

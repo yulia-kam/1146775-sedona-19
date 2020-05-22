@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Юлия Камаева](https://up.htmlacademy.ru/adaptive/19/user/1146775).
-* Наставник: `Неизвестно`.
+* Студент: [Юлия Камаева](https://up.htmlacademy.ru/adaptive/18/user/1146775).
+* Наставник: [Роман Духницький](https://htmlacademy.ru/profile/id59884).
 
 ---
 
@@ -24,7 +24,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1146775-sedona-19) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1146775-sedona-18) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807979-e1129f00-a18f-11e9-90d7-b44d2ff2c003.jpg">
 
@@ -54,7 +54,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/1146775-sedona-19.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/1146775-sedona-19
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/1146775-sedona-19/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/1146775-sedona-19?type=dev
+[travis-image]: https://travis-ci.com/htmlacademy-adaptive/1146775-sedona-18.svg?branch=master
+[travis-url]: https://travis-ci.com/htmlacademy-adaptive/1146775-sedona-18
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/1146775-sedona-18/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/1146775-sedona-18?type=dev

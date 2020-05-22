@@ -7,6 +7,7 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var csso = require('gulp-csso');
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -18,8 +19,30 @@ gulp.task("css", function () {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
+    .pipe(csso())
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
+
+
+gulp.task("fonts", function () {
+  return gulp.src("source/fonts/*")
+    .pipe(gulp.dest("build/fonts"))
+    .pipe(server.stream());
+});
+
+gulp.task("html-o", function () {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
+});
+
+gulp.task("images", function () {
+  return gulp.src("source/img/*")
+    .pipe(gulp.dest("build/img"))
+    .pipe(server.stream());
+});
+
 
 gulp.task("server", function () {
   server.init({
@@ -34,4 +57,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("build", gulp.series("css", "fonts", "images", "html-o"));
+gulp.task("start", gulp.series("css", "fonts", "html-o", "images", "server"));

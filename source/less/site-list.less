@@ -1,0 +1,95 @@
+@media (min-width: @mobile-width) {
+    .site-list {
+        padding: 0;
+        margin: 0;
+
+        &__item {
+            list-style-type: none;
+            border-bottom: 1px solid #678fa8;
+            border-top: 1px solid #9ac2db;
+            text-align: center;
+            padding: 17px 0;
+            background-color: rgba(129,179,210,1);
+        }
+
+        &__item:last-child {
+            border-bottom: 1px solid #81b3d2;
+            // box-shadow: none;
+            background-color: rgba(129,179,210,1);
+            -webkit-box-shadow: 0px 1px 0px 0px rgba(109,151,177,1);
+            -moz-box-shadow: 0px 1px 0px 0px rgba(109,151,177,1);
+            box-shadow: 0px 1px 0px 0px rgba(109,151,177,1);        
+        }
+
+        &__item:first-child {
+            border-top: 1px solid #81b3d2;
+        }
+
+        &__item > a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        &__item {
+            &:hover {
+              background-color: #669ec0;
+              border-top-color: #669ec0;
+            }
+          
+            &:active {
+              color: rgba(255, 255, 255, 0.3);
+              background-color: #5496bd;
+              border-top-color: #5496bd;
+            }
+        }
+
+        &__item > a:active{
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+    }
+}
+
+@media (min-width: @tablet-width) {
+
+
+    .site-list {
+        border: none;
+        
+        &__item {
+            border: none;
+            background-color: #ffffff;
+            color: #000000;
+            margin-top: -3px;
+            width: 20%;
+                      
+
+            &:last-child {
+                box-shadow: none;
+                background-color: #ffffff;
+                color: #000000;
+                border: none;
+            }
+
+            &:nth-child(2) {
+                // margin-left: -65px;
+            }
+
+            &:nth-child(3) {
+                margin-left: 150px;
+            }
+
+            
+            
+        }
+        &__item > a {
+            color: #000000;
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: bold;
+            letter-spacing: 0.3px;
+        }
+    }
+}
